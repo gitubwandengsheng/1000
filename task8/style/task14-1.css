@@ -311,18 +311,27 @@ body {
 .studyway {
   text-align: center;
 }
-.round {
+.studyway .round {
   display: inline-block;
+  float: left;
   text-align: center;
   width: 0.4rem;
   line-height: 0.4rem;
   border: solid 0.01rem #999999;
   border-radius: 50%;
 }
-.num1 {
+.studyway .num1 {
   display: inline-block;
   vertical-align: bottom;
   font-size: 0.13rem;
+}
+.studyway .num {
+  display: inline-block;
+  font-size: 0.13rem;
+  margin-top: 0.1rem;
+}
+.studyway .arrow {
+  float: right;
 }
 .arrow {
   display: inline-block;
@@ -408,4 +417,22 @@ body {
   color: #ffffff;
   background-color: #29b078;
   padding: 0;
+}
+.smallround {
+  width: 20%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.smallround1 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+.smallround1:hover {
+  background-color: #29b078;
 }
