@@ -1,438 +1,359 @@
-@charset "UTF-8";
-html {
-  font-size: 625%;
-}
-.main {
-  position: relative;
-  height: 86px;
-  font-size: 0;
-  background-color: #29b078;
-}
-.main .page {
-  display: inline-block;
-  float: right;
-  margin-right: 10%;
-}
-.main .page a {
-  display: inline-block;
-  font-size: 0.16rem;
-  padding: 0 0.15rem;
-  line-height: 0.84rem;
-  color: #ffffff;
-  text-decoration: none;
-  background-color: #29b078;
-}
-.main .page a:hover {
-  border-bottom: solid 0.02rem #ffffff;
-}
-.main label {
-  font-size: 0.14rem;
-}
-.main label div {
-  top: 0.3rem;
-}
-.main img {
-  position: absolute;
-  left: 9%;
-}
-.main input {
-  display: none;
-}
-@media only screen and (max-width: 520px) {
-  .main .page {
-    height: 0;
-    overflow: hidden;
-    text-align: center;
-    margin: 0;
-    width: 100%;
-    margin-top: 84px;
-    float: unset;
-    transition-property: height;
-    transition-duration: 0.4s;
-    transition-timing-function: linear;
-  }
-  .main .page a {
-    width: 100%;
-  }
-  .main label {
-    display: block;
-    position: absolute;
-    right: 30px;
-    top: 40px;
-  }
-  .main label div {
-    height: 0.1rem;
-    width: 0.3rem;
-    border-top: solid 4px #ffffff;
-    border-bottom: solid 4px #ffffff;
-  }
-  .main input {
-    display: none;
-  }
-  #awesomea:checked ~ div {
-    height: 338px;
-  }
-}
-#frame {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-#dis {
-  left: -50px;
-  top: -10px;
-  opacity: 0.5;
-}
-#dis li {
-  display: inline-block;
-  width: 500px;
-  height: 20px;
-  margin: 0 50px;
-  float: left;
-  text-align: center;
-  color: #fff;
-  background: #000000;
-}
-#photos img {
-  float: left;
-  width: 25%;
-  height: 100%;
-}
-#photos {
-  width: calc(400%);
-  /*---修改图片数量的话需要修改下面的动画参数*/
-}
-.play {
-  animation: ma 20s ease-out infinite alternate;
-}
-@keyframes ma {
-  0%,
-  25% {
-    margin-left: 0px;
-  }
-  30%,
-  50% {
-    margin-left: -100%;
-  }
-  55%,
-  75% {
-    margin-left: -200%;
-  }
-  80%,
-  100% {
-    margin-left: -300%;
-  }
-}
-body {
-  margin: 0;
-  font-size: 0.16rem;
-  background-color: #fafafa;
-}
-.row:after,
-.row clear:before {
-  content: "";
-  display: table;
-  clear: both;
-}
-.container {
-  box-sizing: border-box;
-  width: 85%;
-  margin: auto;
-  padding: 16px;
-}
-.container .column {
-  box-sizing: border-box;
-}
-.container .guifan {
-  max-width: 80px;
-  max-height: 80px;
-}
-.container .merit {
-  height: 226.81px;
-  text-align: center;
-}
-[class*='col-'] {
-  float: left;
-  width: 100%;
-  min-height: 1px;
-  padding: 16px;
-}
-.col-1 {
-  width: 8.33%;
-}
-.col-4 {
-  width: 33.33%;
-}
-.col-2 {
-  width: 16.66%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-8 {
-  width: 66.66%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-12 {
-  width: 100%;
-}
-@media only screen and (max-width: 1469px) {
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 670px) {
-  .col-sm-1 {
-    width: 8.33%;
-  }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
-  .white {
-    display: none;
-  }
-  .whitetitle {
-    display: none;
-  }
-  .merit {
-    color: #999999;
-  }
-  .merit p {
-    text-align: center;
-  }
-}
-.head .tel {
-  margin-left: 10%;
-  font-size: 0.14rem;
-  color: #29b078;
-  line-height: 0.3rem;
-}
-.head .tencent {
-  float: right;
-  margin-right: 10%;
-  margin-top: 0.04rem;
-}
-.head .tencent span {
-  display: inline-block;
-  width: 0.2rem;
-  line-height: 0.2rem;
-  border: solid 0.01rem #29b078;
-  border-radius: 50%;
-  margin-left: 0.07rem;
-}
-.head .tencent span img {
-  padding-left: 0.02rem;
-}
-.merit {
-  color: #999999;
-}
-.merit h2 {
-  color: #333333;
-  text-align: center;
-}
-.merit p {
-  text-align: left;
-}
-.merit .h1-0 {
-  margin-top: 0.34rem;
-}
-.merit .user2 {
-  margin: 0.16rem 0;
-}
-.merit .rit {
-  margin-top: 11%!important;
-}
-.merit .numpeo {
-  color: #29b078;
-}
-.study {
-  text-align: center;
-  font-size: 0.24rem;
-  color: #333333;
-}
-.studyway {
-  text-align: center;
-}
-.studyway .round {
-  display: inline-block;
-  float: left;
-  text-align: center;
-  width: 0.4rem;
-  line-height: 0.4rem;
-  border: solid 0.01rem #999999;
-  border-radius: 50%;
-}
-.studyway .num1 {
-  display: inline-block;
-  vertical-align: bottom;
-  font-size: 0.13rem;
-}
-.studyway .num {
-  display: inline-block;
-  font-size: 0.13rem;
-  margin-top: 0.1rem;
-}
-.studyway .arrow {
-  float: right;
-}
-.arrow {
-  display: inline-block;
-  margin-left: 0.1rem;
-  vertical-align: middle;
-}
-.adviser .border {
-  height: 350px;
-  background-color: #ffffff;
-}
-.adviser .border .avatar5 {
-  text-align: center;
-}
-.adviser .border .avatar {
-  color: #999999;
-}
-.adviser .border h4 {
-  text-align: center;
-}
-.company {
-  text-align: center;
-  font-size: 0.24rem;
-}
-.companylogo .company2 {
-  text-align: center;
-}
-.companylogo .col-2 {
-  background-color: #ffffff;
-  text-align: center;
-}
-.companylogo .col-2:hover {
-  box-shadow: 0 0 7px #e6e6e6;
-}
-.white {
-  background-color: #ffffff;
-}
-.white ul {
-  font-size: 0.13rem;
-  margin-left: 8%;
-  color: #999999;
-}
-.white ul li {
-  padding: 1px 0;
-  margin: 0.15rem 0.04rem;
-  height: 20px;
-}
-.white ul li a {
-  color: #999999;
-  text-decoration: none;
-}
-.white ul a:hover {
-  border-bottom: solid 1px #29b078;
-}
-.foot {
-  position: relative;
-  background-color: #29b078;
-  color: #ffffff;
-  font-size: 0.14rem;
-}
-.foot img {
-  margin-top: 0.1rem;
-}
-.foot .column {
-  padding: 0;
-}
-.foot a {
-  text-decoration: none;
-  color: #ffffff;
-}
-.foot a:hover {
-  text-decoration: underline;
-}
-.foot .topone {
-  margin-top: 0.5rem;
-}
-.foot .toptwo {
-  margin-top: 0.15rem;
-}
-.copyringht {
-  border-top: solid 1px rgba(255, 255, 255, 0.2);
-  text-align: center;
-  font-size: 0.14rem;
-  color: #ffffff;
-  background-color: #29b078;
-  padding: 0;
-}
-.smallround {
-  width: 20%;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.smallround1 {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid #ffffff;
-  background-color: #ffffff;
-}
-.smallround1:hover {
-  background-color: #29b078;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/task14-1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+
+<div class="head">
+    <span class="tel">客服热线:010-594078634</span>
+    <span class="tencent">
+        <span>
+            <img src="img/task14-1/page2.png">
+        </span>
+        <span>
+            <img src="img/task14-1/page1.png">
+        </span>
+        <span>
+            <img src="img/task14-1/page3.png">
+        </span>
+    </span>
+
+
+
+
+
+    </span>
+</div>
+<div class="block">
+    <div class="main">
+        <img class="jnshu" src="img/task14-1/jnshu.png">
+        <input type="checkbox" id="awesomea" />
+        <label for="awesomea"><div>
+        </div>
+        </label>
+
+        <div class="page">
+            <a class="page1">首页</a>
+            <a class="page2" href=task8-2.html>职业</a>
+            <a class="page3" href=task8-3.html>推荐</a>
+            <a class="page4">关于</a>
+        </div>
+    </div>
+
+</div>
+<!--<div class="container">-->
+    <!--<div class="row clear">-->
+        <!--<div class="col-12 column">-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="lunbo">
+    <div id="frame">
+        <div id="photos" class="play">
+            <img src="img/task14-1/slideone.png">
+            <img src="img/task14-1/slideone.png">
+            <img src="img/task14-1/slideone.png">
+            <img src="img/task14-1/slideone.png">
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row clear">
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column merit">
+            <div class="rocket"><img src="img/task14-1/rocket.png"></div>
+            <h2 class="h1">高效</h2>
+            <p class="user2">将五到七年的成长时间，缩短到一年到三年。</p>
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column merit">
+            <div class="archive"><img src="img/task14-1/archive1.png"></div>
+            <h2 class="h1-0">规范</h2>
+            <p class="user2">标准的实战教程，不会走弯路</p>
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column merit">
+            <div class="rocket"><img src="img/task14-1/rocket.png"></div>
+            <h2 class="h1">高效</h2>
+            <p class="user2">同班好友，同院学长，技术大师，入学就混入职脉圈，为以后铺平道路。</p>
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column merit">
+            <div class="user rit">
+                <img src="img/task14-1/user.png"><span class="numpeo">12400</span>
+                <div class="user2">累计在线学人数</div>
+            </div>
+            <div class="user">
+                <img src="img/task14-1/user.png"><span class="numpeo">12400</span>
+                <div class="user2">累计在线学人数</div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<div class="container study">
+    <div class="row clear">
+        <div class="col-12 column">如何学习
+        </div>
+    </div>
+</div>
+<div class="container studyway">
+    <div class="row clear">
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <span class="round">1</span>
+            <span class="num1">匹配你现在的个人情<br>况寻找适合自己的岗位</span>
+            <span class="arrow"><img src="img/task14-1/arrow3.png"></span>
+
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <span class="round">2</span>
+            <span class="num1">了解职业前景薪金待<br>遇、竞争压力等</span>
+            <span class="arrow"><img src="img/task14-1/arrow3.png"></span>
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <span class="round">3</span>
+            <span class="num">掌握行业顶级技能</span>
+            <span class="arrow"><img src="img/task14-1/arrow3.png"></span>
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <span class="round">4</span>
+            <span class="num">查看职业目标任务</span>
+            <span class="arrow"><img src="img/task14-1/arrow3.png"></span>
+        </div>
+
+    </div>
+    <div class="row clear">
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <span class="round">1</span>
+            <span class="num1">匹配你现在的个人情<br>况寻找适合自己的岗位</span>
+            <span class="arrow"><img src="img/task14-1/arrow3.png"></span>
+
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <span class="round">2</span>
+            <span class="num1">了解职业前景薪金待<br>遇、竞争压力等</span>
+            <span class="arrow"><img src="img/task14-1/arrow3.png"></span>
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <span class="round">3</span>
+            <span class="num">掌握行业顶级技能</span>
+            <span class="arrow"><img src="img/task14-1/arrow3.png"></span>
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <span class="round">4</span>
+            <span class="num">查看职业目标任务</span>
+            <span class="arrow"><img src="img/task14-1/arrow3.png"></span>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container adviser">
+    <div class="row clear">
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <div class="col-12 column border">
+                <div>
+                    <div class="avatar5">
+                        <img src="img/task14-1/avatar.png">
+                    </div>
+                    <h4>技术顾问：雷军</h4>
+                    <p class="avatar">百度技术总监：互联网基础 服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <div class="col-12 column border">
+                <div>
+                    <div class="avatar5">
+                        <img src="img/task14-1/avatar2.png">
+                    </div>
+                    <h4>技术顾问：雷军</h4>
+                    <p class="avatar">百度技术总监：互联网基础 服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <div class="col-12 column border">
+                <div>
+                    <div class="avatar5">
+                        <img src="img/task14-1/avatar3.png">
+                    </div>
+                    <h4>技术顾问：雷军</h4>
+                    <p class="avatar">百度技术总监：互联网基础 服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 col-lg-3 col-md-6 col-sm-12 column">
+            <div class="col-12 column border">
+                <div>
+                    <div class="avatar5">
+                        <img src="img/task14-1/avatar.png">
+                    </div>
+                    <h4>技术顾问：雷军</h4>
+                    <p class="avatar">百度技术总监：互联网基础 服务领域，从事虚拟主机、云服务器、域名。曾任新网高级技术经理，负责技术研发、团队管理与建设。</p>
+                </div>
+            </div>
+        </div>
+        <div class="smallround">
+            <span class="smallround1"></span>
+            <span class="smallround1"></span>
+            <span class="smallround1"></span>
+            <span class="smallround1"></span>
+
+        </div>
+
+    </div>
+
+</div>
+<div class="container">
+    <div class="row clear">
+        <div class="col-12 column company">战略合作企业
+        </div>
+    </div>
+</div>
+<div class="container companylogo">
+    <div class="row clear">
+        <div class="col-1 col-lg-2 col-md-2 col-sm-12 column none"></div>
+
+        <div class="col-2 col-lg-4 col-md-4 col-sm-12 column">
+            <img src="img/task14-1/alibaba.png">
+        </div>
+        <div class="col-2 col-lg-4 col-md-4 col-sm-12 column">
+            <img src="img/task14-1/jinshan.png">
+
+        </div>
+        <div class="col-2 col-lg-4 col-md-4 col-sm-12 column">
+            <img src="img/task14-1/huanxin.png">
+
+        </div>
+        <div class="col-2 col-lg-4 col-md-4 col-sm-12 column">
+            <img src="img/task14-1/ronglian.png">
+
+        </div>
+        <div class="col-2 col-lg-4 col-md-4 col-sm-12 column">
+            <img src="img/task14-1/qiniu.png">
+        </div>
+        <!--<div class="col-1 col-lg-3 col-md-6 col-sm-12 column"></div>-->
+
+
+
+
+    </div>
+</div>
+<div class="container whitetitle">
+    <div class="row clear">
+        <div class="col-12 column company">友情链接
+        </div>
+    </div>
+</div>
+<div class="container white">
+    <ul class="row clear">
+
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">手机软件</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">教师招聘</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">找工作</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">手机软件</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">教师招聘</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">找工作</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">手机软件</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">教师招聘</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">找工作</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">手机软件</a>
+        </li>
+
+    </ul>
+
+    <ul class="row clear">
+
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">手机软件</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">教师招聘</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">找工作</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">手机软件</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">教师招聘</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">找工作</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">手机软件</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">教师招聘</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">找工作</a>
+        </li>
+        <li class="col-1 col-md-2 column"><a class="top1" href="#top" target="_self">手机软件</a>
+        </li>
+
+    </ul>
+
+
+
+</div>
+<div class="foot">
+    <div class="container">
+        <div class="row clear">
+            <div class="col-4 col-md-12 column">
+                <div>技能树——改变你我</div>
+                <div class="topone">
+                    <a class="top1" href="#top" target="_self">关于我们</a>
+                    <a class="top1" href="#top" target="_self">联系我们</a>
+                    <a class="top1" href="#top" target="_self">合作企业</a>
+                </div>
+
+            </div>
+            <div class="col-4 col-md-12 column">
+                <div>旗下网站</div>
+                <div class="toptwo">
+                    <a class="top1" href="#top" target="_self">草船云孵化器</a>
+                    <a class="top1" href="#top" target="_self">最强IT特训营</a>
+                </div>
+                <div class="toptwo">
+                    <a class="top1" href="#top" target="_self">葡萄藤轻游戏</a>
+                    <a class="top1" href="#top" target="_self">桌游精灵</a>
+                </div>
+
+            </div>
+            <div class="col-4 col-md-12 column">
+                <div>微信公众平台</div>
+                <div><img src="img/task14-1/weixin.png"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="copyringht">
+        <div class="row clear">
+            <div class="col-12 column">Copyright © 2015技能树 www.jnshu.com All Rights Reserved | 京ICP备13005880号</div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
