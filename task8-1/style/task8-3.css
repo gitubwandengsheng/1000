@@ -196,6 +196,9 @@ body {
   .col-md-12 {
     width: 100%;
   }
+  .company {
+    margin: auto;
+  }
 }
 @media only screen and (max-width: 870px) {
   .col-sm-1 {
@@ -234,7 +237,7 @@ body {
 }
 .company {
   background-color: #ffffff;
-  display: inline-block;
+  display: block;
   border: solid 1px #e6e6e6;
 }
 .company .partnercompany {
@@ -242,6 +245,10 @@ body {
   text-align: center;
   border-bottom: solid 1px #e6e6e6;
   padding: 0.2rem 0;
+}
+.company .boxone {
+  width: 210px;
+  margin: auto;
 }
 .company .box {
   margin: 0.2rem 0;
